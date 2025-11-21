@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women Safety | Home</title>
+
+    <!-- Google Font (Premium Look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1 class="logo">Women Safety Awareness</h1>
-    <nav>
+<header class="header">
+    <div class="logo">⚘ Women Safety</div>
+    <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="tips.html">Safety Tips</a>
         <a href="emergency.html">Emergency</a>
@@ -19,108 +24,115 @@
     </nav>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero new-hero">
-    <div class="hero-content">
-        <h2>Empowering Women. Ensuring Safety.</h2>
-        <p>Access trusted resources, real-time emergency tools, and practical knowledge designed to protect and empower women everywhere.</p>
-        <button class="sos-btn" onclick="triggerSOS()">Trigger SOS Alert</button>
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section">
+    <div class="hero-left">
+        <h1>Empowering Women. <br> Ensuring <span>Safety & Support.</span></h1>
+        <p>Your safety matters. Explore tools, emergency assistance, awareness resources, and guidance to protect, empower, and support women everywhere.</p>
+
+        <div class="hero-btns">
+            <button class="btn-primary" onclick="triggerSOS()">SOS Alert</button>
+            <a href="emergency.html" class="btn-secondary">Emergency Help</a>
+        </div>
     </div>
 
-    <div class="hero-image">
-        <img src="assets/images/women-safety.png" alt="Women Safety Illustration">
+    <div class="hero-right">
+        <img src="assets/images/woman-hero.png" alt="Women Safety">
     </div>
 </section>
 
-<!-- WHY SAFETY MATTERS -->
-<section class="why-section">
-    <h2>Why Women’s Safety Matters</h2>
-    <p>
-        Every woman deserves to feel safe — at home, at work, online, and in public spaces.  
-        Our mission is to raise awareness, provide support, and offer tools that help prevent violence, harassment, and unsafe situations.
-    </p>
+<!-- ================= BLOCK SECTION: WHY SAFETY ================= -->
+<section class="block-section">
+    <h2>Why Women’s Safety is Important</h2>
+    <p class="section-subtitle">Safety is a fundamental right — at home, in public, online, and at work.</p>
 
-    <div class="stats">
-        <div class="stat-box">
+    <div class="stat-blocks">
+        <div class="stat-card">
             <h3>1 in 3</h3>
-            <p>Women worldwide experience violence in their lifetime.</p>
+            <p>Women experience violence globally.</p>
         </div>
-        <div class="stat-box">
+
+        <div class="stat-card">
             <h3>70%</h3>
-            <p>Of women feel unsafe walking alone at night.</p>
+            <p>Feel unsafe when traveling alone at night.</p>
         </div>
-        <div class="stat-box">
-            <h3>Every 5 mins</h3>
-            <p>A case of harassment is reported globally.</p>
+
+        <div class="stat-card">
+            <h3>5 mins</h3>
+            <p>One harassment case reported every 5 minutes.</p>
         </div>
     </div>
 </section>
 
-<!-- FEATURES GRID -->
-<section class="features">
-    <h2>What This Platform Offers</h2>
+<!-- ================= BLOCK SECTION: FEATURES ================= -->
+<section class="features-section">
+    <h2>What We Provide</h2>
+    <p class="section-subtitle">Trusted tools and resources designed to protect and empower.</p>
 
     <div class="feature-grid">
         <div class="feature-card">
-            <h3>📞 Emergency Help</h3>
-            <p>Instant access to trusted helplines and SOS tools.</p>
+            <h3>📞 Emergency Tools</h3>
+            <p>SOS alerts, quick helpline numbers, and location sharing.</p>
             <a href="emergency.html" class="feature-btn">Open</a>
         </div>
 
         <div class="feature-card">
-            <h3>🛡 Safety Tips</h3>
-            <p>Travel, home, workplace, and online safety guidelines.</p>
-            <a href="tips.html" class="feature-btn">Learn</a>
+            <h3>🛡 Self-Protection Tips</h3>
+            <p>Travel, home, workplace, and online safety guidance.</p>
+            <a href="tips.html" class="feature-btn">Read</a>
         </div>
 
         <div class="feature-card">
-            <h3>📍 Location Sharing</h3>
-            <p>Share your real-time location with a trusted contact.</p>
+            <h3>📍 GPS Location Share</h3>
+            <p>Send your real-time location to trusted contacts.</p>
             <a href="emergency.html" class="feature-btn">Try</a>
         </div>
 
         <div class="feature-card">
-            <h3>💕 Support Resources</h3>
-            <p>NGOs, shelters, police contacts, and legal aid.</p>
+            <h3>❤️ Support Resources</h3>
+            <p>NGOs, shelters, police contacts, and legal assistance.</p>
             <a href="resources.html" class="feature-btn">Explore</a>
         </div>
 
         <div class="feature-card">
-            <h3>📢 Report Safely</h3>
-            <p>Anonymous reporting to raise concerns discreetly.</p>
-            <a href="report.html" class="feature-btn">Submit</a>
+            <h3>📝 Anonymous Reporting</h3>
+            <p>Submit incidents safely and privately without identity disclosure.</p>
+            <a href="report.html" class="feature-btn">Report</a>
         </div>
 
         <div class="feature-card">
-            <h3>🔔 Panic Button</h3>
-            <p>Quick SOS activation available across all pages.</p>
+            <h3>🔔 Global Panic Button</h3>
+            <p>Instant SOS trigger available across the website.</p>
             <button class="feature-btn" onclick="triggerSOS()">SOS</button>
         </div>
     </div>
 </section>
 
-<!-- REMINDERS SECTION -->
-<section class="reminders">
-    <h2>Always Remember</h2>
-    <ul>
-        <li>Trust your instincts — if something feels wrong, leave immediately.</li>
-        <li>Stay aware of your surroundings at all times.</li>
-        <li>Share your location with someone you trust during travel.</li>
-        <li>Learn basic self-defense techniques.</li>
-        <li>Always keep emergency contacts easily accessible.</li>
-    </ul>
+<!-- ================= BLOCK SECTION: SAFETY REMINDERS ================= -->
+<section class="reminder-section">
+    <h2>Safety Reminders</h2>
+
+    <div class="reminder-grid">
+        <div class="reminder-box">Trust your instincts — leave if something feels off.</div>
+        <div class="reminder-box">Share your live location when travelling alone.</div>
+        <div class="reminder-box">Stay alert in crowded or isolated areas.</div>
+        <div class="reminder-box">Learn basic self-defense techniques.</div>
+        <div class="reminder-box">Keep emergency numbers saved.</div>
+        <div class="reminder-box">Avoid sharing personal info with strangers.</div>
+    </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 Women Safety Awareness | Empowering Women for a Safer Future</p>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    © 2025 Women Safety Awareness — Built to Protect, Empower & Support
 </footer>
 
-<!-- Floating SOS Button -->
+<!-- Floating Panic Button -->
 <div class="floating-sos" onclick="triggerSOS()">SOS</div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
