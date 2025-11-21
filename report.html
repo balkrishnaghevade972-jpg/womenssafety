@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Issue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Report a Concern</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tips.html">Safety Tips</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="resources.html">Resources</a>
+        <a href="report.html">Report</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Anonymous Reporting Form</h2>
+
+    <form action="https://formspree.io/f/yourcode" method="POST">
+        <label>Your Message:</label>
+        <textarea name="message" required></textarea>
+
+        <label>Location (optional):</label>
+        <input type="text" name="location">
+
+        <button type="submit">Submit Report</button>
+    </form>
+
+    <p>Your identity is not collected.</p>
+</section>
+
+<div class="floating-sos" onclick="triggerSOS()">SOS</div>
+
+<script src="script.js"></script>
+</body>
+</html>
