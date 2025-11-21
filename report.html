@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Incident | Women Safety</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,57 +22,67 @@
     </nav>
 </header>
 
-<!-- HERO SECTION -->
-<section class="report-hero">
-    <h1>Report an Incident</h1>
-    <p>Your voice matters. Submit a report safely, quickly, and anonymously.</p>
+<!-- HERO -->
+<section class="report-hero-new">
+    <h1>Submit a Report</h1>
+    <p>Your identity is safe. Your report will be handled with care and confidentiality.</p>
 </section>
 
-<!-- REPORT FORM -->
-<section class="report-section">
-    <h2>Submit Your Report</h2>
+<!-- FORM SECTION -->
+<section class="report-section-clean">
+    <div class="report-card">
+        <h2>Incident Report Form</h2>
 
-    <!-- ❗ Replace YOUR_EMAIL with your Gmail -->
-    <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" class="report-form">
+        <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" enctype="multipart/form-data">
 
-        <!-- Disable Captcha -->
-        <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/thanks.html">
 
-        <!-- Redirect to thank-you page -->
-        <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/thanks.html">
+            <div class="input-group">
+                <label>Your Name (Optional)</label>
+                <input type="text" name="name" placeholder="Type your name...">
+            </div>
 
-        <label>Your Name (optional)</label>
-        <input type="text" name="name" placeholder="Enter your name (optional)">
+            <div class="input-group">
+                <label>Your Email (Optional)</label>
+                <input type="email" name="email" placeholder="example@gmail.com">
+            </div>
 
-        <label>Your Email (optional)</label>
-        <input type="email" name="email" placeholder="you@example.com">
+            <div class="input-group">
+                <label>Location of Incident *</label>
+                <input type="text" name="location" required placeholder="Where did it happen?">
+            </div>
 
-        <label>Location of Incident</label>
-        <input type="text" name="location" required placeholder="City, Area, or Address">
+            <div class="input-group">
+                <label>Type of Incident *</label>
+                <select name="type" required>
+                    <option value="">Choose an incident type</option>
+                    <option>Harassment</option>
+                    <option>Physical Assault</option>
+                    <option>Stalking</option>
+                    <option>Domestic Violence</option>
+                    <option>Cyber Harassment</option>
+                    <option>Other</option>
+                </select>
+            </div>
 
-        <label>Type of Incident</label>
-        <select name="type" required>
-            <option value="">Select incident type</option>
-            <option>Harassment</option>
-            <option>Stalking</option>
-            <option>Domestic Violence</option>
-            <option>Online Threats</option>
-            <option>Physical Assault</option>
-            <option>Other</option>
-        </select>
+            <div class="input-group">
+                <label>Describe What Happened *</label>
+                <textarea name="message" required placeholder="Write details about the incident..."></textarea>
+            </div>
 
-        <label>Describe What Happened</label>
-        <textarea name="message" required placeholder="Enter full details of the incident"></textarea>
+            <div class="input-group">
+                <label>Upload Evidence (Optional)</label>
+                <input type="file" name="attachment" accept="image/*,.pdf,.mp4,.mp3">
+            </div>
 
-        <label>Upload Evidence (optional)</label>
-        <input type="file" name="attachment" accept="image/*,.pdf,.mp4">
-
-        <button type="submit" class="submit-btn">Submit Report</button>
-    </form>
+            <button class="submit-clean" type="submit">Submit Report</button>
+        </form>
+    </div>
 </section>
 
 <footer class="footer">
-    © 2025 Women Safety | Stay Safe. Stay Empowered.
+    © 2025 Women Safety • Your Safety Matters
 </footer>
 
 <div class="floating-sos" onclick="triggerSOS()">SOS</div>
@@ -82,5 +90,8 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+    
 
       
