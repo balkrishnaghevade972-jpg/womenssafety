@@ -185,4 +185,101 @@ body {
     box-shadow: 0 5px 18px rgba(0,0,0,0.2);
 }
 
+/* Tips Hero */
+.tips-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #ffe0ed, #ffd4e7);
+}
+
+.tips-hero h1 {
+    font-size: 42px;
+    color: #d6336c;
+    font-weight: 700;
+}
+
+.tips-hero p {
+    margin-top: 12px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Category Cards */
+.tips-categories {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.category-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #ffd1e5;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Accordion */
+.accordion-section {
+    padding: 60px 40px;
+}
+
+.accordion {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 18px;
+    background: #d6336c;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.accordion-btn.active {
+    background: #b62c5d;
+}
+
+.accordion-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    background: #fff2f7;
+    border-left: 4px solid #d6336c;
+    transition: max-height 0.3s ease;
+    border-radius: 0 0 10px 10px;
+}
+
+.accordion-content ul {
+    padding: 15px 0;
+}
+
+.accordion-content ul li {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+
 
