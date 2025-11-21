@@ -538,6 +538,188 @@ textarea {
 .home-btn:hover {
     background: #b72957;
 }
+    /* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff9fb;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #d6336c;
+    color: white;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid white;
+}
+
+/* Hero Section */
+.res-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #ffe0f0, #ffd5e7);
+}
+
+.res-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #d6336c;
+}
+
+.res-hero p {
+    margin-top: 12px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Resource Grid */
+.res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 60px 40px;
+}
+
+/* Resource Cards */
+.res-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #ffc8df;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.res-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(198, 40, 88, 0.15);
+}
+
+/* Icons */
+.res-card .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* Titles & Description */
+.res-card h3 {
+    color: #c92a63;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.res-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Resource Buttons */
+.res-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #d6336c;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.res-btn:hover {
+    background: #b72957;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #d6336c;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+}
+
+/* Floating SOS Button */
+.floating-sos {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: red;
+    color: white;
+    padding: 18px 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.floating-sos:hover {
+    background: #b70000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .res-grid {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .res-hero h1 {
+        font-size: 32px;
+    }
+
+    .res-hero p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .res-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .res-card .icon {
+        font-size: 38px;
+    }
+
+    .res-card h3 {
+        font-size: 18px;
+    }
+
+    .res-card p {
+        font-size: 14px;
+    }
+}
+
 
 
 
