@@ -1,43 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources & Support</title>
+    <title>Resources | Women Safety</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Support Resources</h1>
-    <nav>
+<header class="header">
+    <div class="logo">⚘ Women Safety</div>
+    <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="tips.html">Safety Tips</a>
         <a href="emergency.html">Emergency</a>
-        <a href="resources.html">Resources</a>
+        <a href="resources.html" class="active">Resources</a>
         <a href="report.html">Report</a>
     </nav>
 </header>
 
-<section class="content">
-    <h2>Important Helplines</h2>
-    <ul>
-        <li>Police: 100</li>
-        <li>Women Helpline: 1091</li>
-        <li>Domestic Abuse: 181</li>
-        <li>Cyber Crime: 1930</li>
-    </ul>
-
-    <h2>NGOs</h2>
-    <ul>
-        <li>National Commission for Women</li>
-        <li>Sakhi Women's Support</li>
-    </ul>
-
-    <h2>Nearby Safe Places</h2>
-    <iframe src="https://maps.google.com/maps?q=police%20station&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="100%" height="300"></iframe>
+<!-- HERO SECTION -->
+<section class="res-hero">
+    <h1>Women Safety Resources</h1>
+    <p>Find trusted support organizations, helplines, NGOs, and legal help.</p>
 </section>
+
+<!-- RESOURCE CARDS -->
+<section class="res-grid">
+
+    <div class="res-card">
+        <div class="icon">☎️</div>
+        <h3>Women Helpline (All India)</h3>
+        <p>24/7 toll-free support for women facing violence or threats.</p>
+        <a href="tel:1091" class="res-btn">Call 1091</a>
+    </div>
+
+    <div class="res-card">
+        <div class="icon">📢</div>
+        <h3>National Commission for Women</h3>
+        <p>Official website for complaints, awareness & support.</p>
+        <a href="https://ncw.nic.in" target="_blank" class="res-btn">Visit Website</a>
+    </div>
+
+    <div class="res-card">
+        <div class="icon">🏥</div>
+        <h3>Hospital Directory</h3>
+        <p>Find nearby hospitals for emergencies and medical aid.</p>
+        <a href="https://www.google.com/maps/search/hospitals+near+me" target="_blank" class="res-btn">Find Hospitals</a>
+    </div>
+
+    <div class="res-card">
+        <div class="icon">⚖️</div>
+        <h3>Free Legal Support</h3>
+        <p>Get free, confidential legal advice for women's rights.</p>
+        <a href="https://nalsa.gov.in" target="_blank" class="res-btn">Open Resource</a>
+    </div>
+
+    <div class="res-card">
+        <div class="icon">🤝</div>
+        <h3>Women Support NGOs</h3>
+        <p>Organizations providing shelter, counseling & protection.</p>
+        <a href="https://www.google.com/search?q=women+NGOs+near+me" target="_blank" class="res-btn">Find NGOs</a>
+    </div>
+
+    <div class="res-card">
+        <div class="icon">🛡</div>
+        <h3>Cyber Crime Portal</h3>
+        <p>Report online harassment, blackmailing & cybersecurity issues.</p>
+        <a href="https://cybercrime.gov.in" target="_blank" class="res-btn">Report Online</a>
+    </div>
+
+</section>
+
+<footer class="footer">
+    © 2025 Women Safety | Support & Protection for All Women
+</footer>
 
 <div class="floating-sos" onclick="triggerSOS()">SOS</div>
 
