@@ -8,7 +8,199 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Universal */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fff9fb;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            background: #d6336c;
+            color: white;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar a.active {
+            border-bottom: 2px solid white;
+        }
+
+        /* Hero Section */
+        .em-hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #ffd6e7, #ffe7f1);
+        }
+
+        .em-hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #d6336c;
+        }
+
+        .em-hero p {
+            margin-top: 12px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* Emergency Grid */
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            padding: 60px 40px;
+        }
+
+        /* Emergency Cards */
+        .em-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #ffd1e5;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .em-card.big {
+            grid-column: span 2;
+            background: #ffe0ec;
+        }
+
+        .em-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(198, 40, 88, 0.15);
+        }
+
+        /* Icons */
+        .em-card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        /* Titles & Description */
+        .em-card h3 {
+            color: #c92a63;
+            font-size: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .em-card p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Buttons */
+        .call-btn, .location-btn, .w-btn, .sos-main-btn {
+            background: #d6336c;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .call-btn:hover, .location-btn:hover, .w-btn:hover, .sos-main-btn:hover {
+            background: #b72957;
+        }
+
+        /* Floating SOS Button */
+        .floating-sos {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            background: red;
+            color: white;
+            padding: 18px 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .floating-sos:hover {
+            background: #b70000;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background: #d6336c;
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .emergency-grid {
+                padding: 40px 20px;
+                gap: 20px;
+            }
+
+            .em-hero h1 {
+                font-size: 32px;
+            }
+
+            .em-hero p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .em-card {
+                padding: 20px;
+                border-radius: 12px;
+            }
+
+            .em-card .icon {
+                font-size: 38px;
+            }
+
+            .em-card h3 {
+                font-size: 18px;
+            }
+
+            .em-card p {
+                font-size: 14px;
+            }
+
+            .em-card.big {
+                grid-column: span 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -78,6 +270,10 @@
 <div class="floating-sos" onclick="triggerSOS()">SOS</div>
 
 <script>
+    function triggerSOS() {
+        alert('Emergency SOS triggered! Call your local authorities immediately.');
+    }
+
     function shareLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(pos => {
@@ -96,9 +292,10 @@
     }
 </script>
 
-<script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
