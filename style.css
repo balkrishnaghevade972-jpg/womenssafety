@@ -443,54 +443,8 @@ textarea {
 .sos-main-btn {
     font-size: 20px;
 }
-/* Resources Hero */
-.res-hero {
-    padding: 60px 20px;
-    text-align: center;
-    background: linear-gradient(to right, #ffe0f0, #ffd5e7);
-}
 
-.res-hero h1 {
-    font-size: 42px;
-    font-weight: 700;
-    color: #d6336c;
-}
 
-/* Resource Cards */
-.res-grid {
-    padding: 60px 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-}
-
-.res-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid #ffc8df;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    text-align: center;
-    transition: 0.3s;
-}
-
-.res-card:hover {
-    transform: translateY(-6px);
-}
-
-.res-card .icon {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-.res-btn {
-    display: inline-block;
-    padding: 12px 18px;
-    background: #d6336c;
-    color: white;
-    border-radius: 10px;
-    margin-top: 15px;
-}
     /* Thank You Page */
 .thank-hero {
     display: flex;
