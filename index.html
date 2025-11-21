@@ -9,7 +9,7 @@
 <body>
 
 <header>
-    <h1>Women Safety Awareness</h1>
+    <h1 class="logo">Women Safety Awareness</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="tips.html">Safety Tips</a>
@@ -19,14 +19,108 @@
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Your Safety Matters</h2>
-    <p>Learn, stay alert, and access resources instantly.</p>
-    <button onclick="triggerSOS()">Trigger SOS Alert</button>
+<!-- HERO SECTION -->
+<section class="hero new-hero">
+    <div class="hero-content">
+        <h2>Empowering Women. Ensuring Safety.</h2>
+        <p>Access trusted resources, real-time emergency tools, and practical knowledge designed to protect and empower women everywhere.</p>
+        <button class="sos-btn" onclick="triggerSOS()">Trigger SOS Alert</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="assets/images/women-safety.png" alt="Women Safety Illustration">
+    </div>
 </section>
 
+<!-- WHY SAFETY MATTERS -->
+<section class="why-section">
+    <h2>Why Women’s Safety Matters</h2>
+    <p>
+        Every woman deserves to feel safe — at home, at work, online, and in public spaces.  
+        Our mission is to raise awareness, provide support, and offer tools that help prevent violence, harassment, and unsafe situations.
+    </p>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h3>1 in 3</h3>
+            <p>Women worldwide experience violence in their lifetime.</p>
+        </div>
+        <div class="stat-box">
+            <h3>70%</h3>
+            <p>Of women feel unsafe walking alone at night.</p>
+        </div>
+        <div class="stat-box">
+            <h3>Every 5 mins</h3>
+            <p>A case of harassment is reported globally.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES GRID -->
+<section class="features">
+    <h2>What This Platform Offers</h2>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>📞 Emergency Help</h3>
+            <p>Instant access to trusted helplines and SOS tools.</p>
+            <a href="emergency.html" class="feature-btn">Open</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>🛡 Safety Tips</h3>
+            <p>Travel, home, workplace, and online safety guidelines.</p>
+            <a href="tips.html" class="feature-btn">Learn</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>📍 Location Sharing</h3>
+            <p>Share your real-time location with a trusted contact.</p>
+            <a href="emergency.html" class="feature-btn">Try</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>💕 Support Resources</h3>
+            <p>NGOs, shelters, police contacts, and legal aid.</p>
+            <a href="resources.html" class="feature-btn">Explore</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>📢 Report Safely</h3>
+            <p>Anonymous reporting to raise concerns discreetly.</p>
+            <a href="report.html" class="feature-btn">Submit</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔔 Panic Button</h3>
+            <p>Quick SOS activation available across all pages.</p>
+            <button class="feature-btn" onclick="triggerSOS()">SOS</button>
+        </div>
+    </div>
+</section>
+
+<!-- REMINDERS SECTION -->
+<section class="reminders">
+    <h2>Always Remember</h2>
+    <ul>
+        <li>Trust your instincts — if something feels wrong, leave immediately.</li>
+        <li>Stay aware of your surroundings at all times.</li>
+        <li>Share your location with someone you trust during travel.</li>
+        <li>Learn basic self-defense techniques.</li>
+        <li>Always keep emergency contacts easily accessible.</li>
+    </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Women Safety Awareness | Empowering Women for a Safer Future</p>
+</footer>
+
+<!-- Floating SOS Button -->
 <div class="floating-sos" onclick="triggerSOS()">SOS</div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
