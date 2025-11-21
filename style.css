@@ -296,63 +296,104 @@ body {
     opacity: 0.8;
 }
 
-/* Report Form */
-.report-section {
-    padding: 60px 20px;
+/* CLEAN REPORT HERO */
+.report-hero-new {
     text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(to right, #ffe7f0, #ffddec);
 }
 
-.report-form {
-    max-width: 650px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    border: 1px solid #ffd1e5;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.07);
-}
-
-.report-form label {
-    margin-top: 15px;
-    display: block;
-    text-align: left;
+.report-hero-new h1 {
+    font-size: 44px;
     font-weight: 600;
-    color: #b82d5d;
+    color: #c92a63;
 }
 
-.report-form input,
-.report-form select,
-.report-form textarea {
+.report-hero-new p {
+    font-size: 18px;
+    margin-top: 12px;
+    opacity: 0.75;
+}
+
+/* CLEAN FORM DESIGN */
+.report-section-clean {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.report-card {
+    background: #ffffff;
+    padding: 40px;
+    max-width: 700px;
     width: 100%;
-    margin-top: 5px;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #e8b6c9;
-    font-size: 16px;
-    background: #fff8fc;
+    border-radius: 18px;
+    border: 1px solid #ffd3e3;
+    box-shadow: 0px 7px 22px rgba(0,0,0,0.08);
 }
 
-.report-form textarea {
-    height: 140px;
+.report-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #c92a63;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #b22858;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #f2b6cc;
+    background: #fff6fa;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #d6336c;
+    background: #fff1f8;
+}
+
+textarea {
+    height: 150px;
     resize: none;
 }
 
-.submit-btn {
-    margin-top: 25px;
+/* CLEAN BUTTON */
+.submit-clean {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
     background: #d6336c;
     color: white;
-    padding: 14px 20px;
     border: none;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 12px;
     cursor: pointer;
+    margin-top: 10px;
+    transition: 0.25s;
 }
 
-.submit-btn:hover {
-    background: #b82959;
+.submit-clean:hover {
+    background: #b72957;
 }
-font-size: 16px;
-}
+
+
 /* Emergency Hero */
 .em-hero {
     text-align: center;
