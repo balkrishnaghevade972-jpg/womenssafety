@@ -3,43 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safety Tips</title>
+    <title>Safety Tips | Women Safety</title>
+
+    <!-- Google Premium Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Safety Tips</h1>
-    <nav>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">⚘ Women Safety</div>
+    <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="tips.html">Safety Tips</a>
+        <a href="tips.html" class="active">Safety Tips</a>
         <a href="emergency.html">Emergency</a>
         <a href="resources.html">Resources</a>
         <a href="report.html">Report</a>
     </nav>
 </header>
 
-<section class="content">
-    <h2>Travel Safety</h2>
-    <ul>
-        <li>Inform someone before leaving.</li>
-        <li>Avoid isolated areas.</li>
-        <li>Keep your phone charged.</li>
-    </ul>
-
-    <h2>Online Safety</h2>
-    <ul>
-        <li>Never share passwords.</li>
-        <li>Avoid suspicious links.</li>
-        <li>Use two-factor authentication.</li>
-    </ul>
-
-    <h2>Self Defense Basics</h2>
-    <p>Learn to target sensitive areas like eyes, nose, throat, and knees.</p>
+<!-- ================= HERO SECTION ================= -->
+<section class="tips-hero">
+    <h1>Essential Women’s Safety Tips</h1>
+    <p>Stay informed, stay aware, and stay empowered no matter where you are.</p>
 </section>
 
+<!-- ================= CATEGORY CARDS ================= -->
+<section class="tips-categories">
+    <h2>Explore Safety Categories</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <div class="icon">🚶‍♀️</div>
+            <h3>Travel Safety</h3>
+            <p>Stay alert while commuting or traveling alone.</p>
+        </div>
+
+        <div class="category-card">
+            <div class="icon">🏠</div>
+            <h3>Home Safety</h3>
+            <p>Ensure your home environment remains secure.</p>
+        </div>
+
+        <div class="category-card">
+            <div class="icon">💼</div>
+            <h3>Workplace Safety</h3>
+            <p>Know your rights and stay confident at work.</p>
+        </div>
+
+        <div class="category-card">
+            <div class="icon">🌐</div>
+            <h3>Online Safety</h3>
+            <p>Protect yourself from cyber threats and scams.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= ACCORDION SECTION ================= -->
+<section class="accordion-section">
+    <h2>Detailed Safety Guidelines</h2>
+
+    <!-- Travel Safety -->
+    <div class="accordion">
+        <button class="accordion-btn">🚶‍♀️ Travel Safety Tips</button>
+        <div class="accordion-content">
+            <ul>
+                <li>Prefer well-lit and busy roads, especially at night.</li>
+                <li>Share your live location with someone you trust.</li>
+                <li>Avoid traveling with strangers or hitchhiking.</li>
+                <li>Carry a fully charged phone and power bank.</li>
+                <li>Do not reveal travel plans publicly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Home Safety -->
+    <div class="accordion">
+        <button class="accordion-btn">🏠 Home Safety Tips</button>
+        <div class="accordion-content">
+            <ul>
+                <li>Always lock doors and windows before sleeping.</li>
+                <li>Do not allow unknown service people inside without ID verification.</li>
+                <li>Install peepholes or a security camera if possible.</li>
+                <li>Never leave spare keys outside your home.</li>
+                <li>Keep emergency contacts visible at home.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Workplace Safety -->
+    <div class="accordion">
+        <button class="accordion-btn">💼 Workplace Safety Tips</button>
+        <div class="accordion-content">
+            <ul>
+                <li>Maintain professional boundaries with colleagues.</li>
+                <li>Avoid staying alone in office late at night.</li>
+                <li>Report harassment immediately to HR or trusted staff.</li>
+                <li>Know your workplace’s emergency exits.</li>
+                <li>Keep your personal details private.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Online Safety -->
+    <div class="accordion">
+        <button class="accordion-btn">🌐 Online Safety Tips</button>
+        <div class="accordion-content">
+            <ul>
+                <li>Never share your passwords or OTPs with anyone.</li>
+                <li>Use strong, unique passwords for each account.</li>
+                <li>Enable 2-Factor Authentication everywhere possible.</li>
+                <li>Avoid clicking unknown links or downloading files from strangers.</li>
+                <li>Do not overshare personal information on social media.</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    © 2025 Women Safety Awareness — Stay Safe. Stay Empowered.
+</footer>
+
+<!-- Floating Panic Button -->
 <div class="floating-sos" onclick="triggerSOS()">SOS</div>
+
+<!-- Accordion JavaScript -->
+<script>
+    const accButtons = document.querySelectorAll(".accordion-btn");
+
+    accButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            btn.classList.toggle("active");
+
+            const content = btn.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    });
+</script>
 
 <script src="script.js"></script>
 </body>
 </html>
+
