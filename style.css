@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f8;
+    margin: 0;
+}
+
+header {
+    background: #d6336c;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #d6336c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.call-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    background: red;
+    color: white;
+}
+
+.floating-sos {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 15px 20px;
+    font-size: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+}
