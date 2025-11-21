@@ -5,91 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Incident | Women Safety</title>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #ff6b81;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header .logo {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        .navbar a.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        /* Hero Section */
+        .report-hero {
+            background: linear-gradient(to right, #ff6b81, #ff8fa3);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .report-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .report-hero p {
+            font-size: 1.1rem;
+        }
+
+        /* Form Card */
+        .report-card {
+            max-width: 700px;
+            margin: -3rem auto 3rem auto;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .report-card h2 {
+            margin-bottom: 1.5rem;
+            color: #ff6b81;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.2rem;
+        }
+
+        .input-group label {
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            border-color: #ff6b81;
+            box-shadow: 0 0 5px rgba(255, 107, 129, 0.4);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background-color: #ff6b81;
+            color: #fff;
+            border: none;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff495c;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* Floating SOS */
+        .floating-sos {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #ff6b81;
+            color: #fff;
+            font-weight: 700;
+            padding: 1rem 1.2rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .floating-sos:hover {
+            background-color: #ff495c;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .report-card {
+                margin: -2rem 1rem 2rem 1rem;
+                padding: 1.5rem;
+            }
+
+            .report-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
 <body>
 
-<header class="header">
-    <div class="logo">⚘ Women Safety</div>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="tips.html">Safety Tips</a>
-        <a href="emergency.html">Emergency</a>
-        <a href="resources.html">Resources</a>
-        <a href="report.html" class="active">Report</a>
-    </nav>
-</header>
+    <header class="header">
+        <div class="logo">⚘ Women Safety</div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="tips.html">Safety Tips</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="resources.html">Resources</a>
+            <a href="report.html" class="active">Report</a>
+        </nav>
+    </header>
 
-<!-- HERO -->
-<section class="report-hero-new">
-    <h1>Submit a Report</h1>
-    <p>Your identity is safe. Your report will be handled with care and confidentiality.</p>
-</section>
+    <section class="report-hero">
+        <h1>Submit an Incident Report</h1>
+        <p>Your report is confidential. Help us make your community safer.</p>
+    </section>
 
-<!-- FORM SECTION -->
-<section class="report-section-clean">
-    <div class="report-card">
-        <h2>Incident Report Form</h2>
+    <section class="report-section">
+        <div class="report-card">
+            <h2>Incident Report Form</h2>
+            <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" enctype="multipart/form-data">
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/thanks.html">
 
-        <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="name">Your Name (Optional)</label>
+                    <input type="text" id="name" name="name" placeholder="Type your name...">
+                </div>
 
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/thanks.html">
+                <div class="input-group">
+                    <label for="email">Your Email (Optional)</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                </div>
 
-            <div class="input-group">
-                <label>Your Name (Optional)</label>
-                <input type="text" name="name" placeholder="Type your name...">
-            </div>
+                <div class="input-group">
+                    <label for="location">Location of Incident *</label>
+                    <input type="text" id="location" name="location" required placeholder="Where did it happen?">
+                </div>
 
-            <div class="input-group">
-                <label>Your Email (Optional)</label>
-                <input type="email" name="email" placeholder="example@gmail.com">
-            </div>
+                <div class="input-group">
+                    <label for="type">Type of Incident *</label>
+                    <select id="type" name="type" required>
+                        <option value="">Choose an incident type</option>
+                        <option>Harassment</option>
+                        <option>Physical Assault</option>
+                        <option>Stalking</option>
+                        <option>Domestic Violence</option>
+                        <option>Cyber Harassment</option>
+                        <option>Other</option>
+                    </select>
+                </div>
 
-            <div class="input-group">
-                <label>Location of Incident *</label>
-                <input type="text" name="location" required placeholder="Where did it happen?">
-            </div>
+                <div class="input-group">
+                    <label for="message">Describe What Happened *</label>
+                    <textarea id="message" name="message" required placeholder="Write details about the incident..."></textarea>
+                </div>
 
-            <div class="input-group">
-                <label>Type of Incident *</label>
-                <select name="type" required>
-                    <option value="">Choose an incident type</option>
-                    <option>Harassment</option>
-                    <option>Physical Assault</option>
-                    <option>Stalking</option>
-                    <option>Domestic Violence</option>
-                    <option>Cyber Harassment</option>
-                    <option>Other</option>
-                </select>
-            </div>
+                <div class="input-group">
+                    <label for="attachment">Upload Evidence (Optional)</label>
+                    <input type="file" id="attachment" name="attachment" accept="image/*,.pdf,.mp4,.mp3">
+                </div>
 
-            <div class="input-group">
-                <label>Describe What Happened *</label>
-                <textarea name="message" required placeholder="Write details about the incident..."></textarea>
-            </div>
+                <button class="submit-btn" type="submit">Submit Report</button>
+            </form>
+        </div>
+    </section>
 
-            <div class="input-group">
-                <label>Upload Evidence (Optional)</label>
-                <input type="file" name="attachment" accept="image/*,.pdf,.mp4,.mp3">
-            </div>
+    <footer class="footer">
+        © 2025 Women Safety • Your Safety Matters
+    </footer>
 
-            <button class="submit-clean" type="submit">Submit Report</button>
-        </form>
-    </div>
-</section>
+    <div class="floating-sos" onclick="triggerSOS()">SOS</div>
 
-<footer class="footer">
-    © 2025 Women Safety • Your Safety Matters
-</footer>
-
-<div class="floating-sos" onclick="triggerSOS()">SOS</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
 
 
     
